@@ -1493,8 +1493,8 @@ static rmtError ObjectAllocator_Constructor(ObjectAllocator* allocator, rmtU32 o
 static void ObjectAllocator_Destructor(ObjectAllocator* allocator)
 {
     // Ensure everything has been released to the allocator
-    assert(allocator != NULL);
-    assert(allocator->nb_inuse == 0);
+//    assert(allocator != NULL);
+//    assert(allocator->nb_inuse == 0);
 
     // Destroy all objects released to the allocator
     while (allocator->first_free != NULL)
